@@ -1,0 +1,15 @@
+from django.db import models
+class Form_24(models.Model):
+   created_at = models.DateTimeField(auto_now_add=True)
+   approved = models.BooleanField(default=False)
+   Text0 = models.CharField()
+   Email_Field1 = models.CharField()
+   Number2 = models.CharField()
+   Password_Field3 = models.CharField()
+   Multiple_Choice4 = models.CharField()
+   Checkbox5 = models.CharField()
+   Radio6 = models.CharField()
+   Dropdown7 = models.CharField()
+   Date_Field8 = models.DateField()
+   File_Field9 = models.FileField(upload_to ='uploads/', null=True)
+   Text_Area10 = models.TextField(default="")
